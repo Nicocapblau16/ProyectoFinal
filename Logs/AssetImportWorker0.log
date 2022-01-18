@@ -888,3 +888,4 @@ Received Import Request.
 Start importing Assets/Hovl Studio/Procedural fire/Demo scene using Guid(bf9298fc06c57994cbbf8b021b1820f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e4a8199f16a7e9d60e5598c201251f1') in 0.000951 seconds 
   Import took 0.005333 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
