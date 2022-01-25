@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2837051771119285570}
   - component: {fileID: 4394630118999904950}
   - component: {fileID: 7234194079073002436}
-  - component: {fileID: 7287328061600569651}
   m_Layer: 0
   m_Name: r (1)
   m_TagString: Untagged
@@ -82,20 +81,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7287328061600569651
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7711473607198618557}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1001 &8924008970121456409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -155,7 +140,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6969931897961427870, guid: 76f5920306d485a45844400d3c22e67d, type: 3}
+      propertyPath: m_Radius
+      value: 0.5986898
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969931897961427870, guid: 76f5920306d485a45844400d3c22e67d, type: 3}
+      propertyPath: m_Center.y
+      value: 0.011490441
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969931897961427870, guid: 76f5920306d485a45844400d3c22e67d, type: 3}
+      propertyPath: m_Center.z
+      value: 0.006392527
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6608387877781187840, guid: 76f5920306d485a45844400d3c22e67d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 76f5920306d485a45844400d3c22e67d, type: 3}
 --- !u!4 &4937635780327220607 stripped
 Transform:
