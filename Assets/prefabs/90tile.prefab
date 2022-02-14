@@ -87,5 +87,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: 90Tile
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2908009842802755976, guid: b48889ec61a8bb345bca60440411d862, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b48889ec61a8bb345bca60440411d862, type: 3}

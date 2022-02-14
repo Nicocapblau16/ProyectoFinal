@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7376041438158123075}
   - component: {fileID: 7345639115797554877}
   - component: {fileID: 6969931897961427870}
+  - component: {fileID: 2152475225370612742}
   m_Layer: 0
   m_Name: StartEndTile
   m_TagString: Tile
@@ -91,11 +92,23 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2494020323162056931}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.6005746
   m_Center: {x: 0, y: 0, z: 0.0011301041}
+--- !u!114 &2152475225370612742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2494020323162056931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 911fd4122ec6fe145ace65711c6070f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7218134106963673740
 GameObject:
   m_ObjectHideFlags: 0

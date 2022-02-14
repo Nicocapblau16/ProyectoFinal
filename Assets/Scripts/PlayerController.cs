@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody playerRigidbody;
 
+    //public GameObject powerUp;
+
     private void Awake()
     {
         playerRigidbody = GetComponent<Rigidbody>();
@@ -22,4 +24,16 @@ public class PlayerController : MonoBehaviour
         playerRigidbody.AddForce(Vector3.right * speed * horizontalInput);
         playerRigidbody.AddForce(Vector3.forward * speed * verticalInput);
     }
+
+   /* private void OnTriggerEnter(Collider otherTrigger)
+    {
+        if (otherTrigger.gameObject.CompareTag("powerup"))
+        {
+
+        }
+        else if (otherTrigger.gameObject.CompareTag("powerdown"))
+        {
+
+        }
+    }*/
 }

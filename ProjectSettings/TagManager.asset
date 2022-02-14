@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Tile
+  - powerup
+  - powerdown
+  - player
   layers:
   - Default
   - TransparentFX
