@@ -9,6 +9,8 @@ public class EnterStayExit : MonoBehaviour
     private bool inCollider;
     private float distanceToCenter;
 
+    public bool GameOver = false;
+
       
 
     void Update()
@@ -48,5 +50,6 @@ public class EnterStayExit : MonoBehaviour
     {
         inCollider = false;
         Debug.Log("GameOver");
+        GameOver = true;
     }
 }

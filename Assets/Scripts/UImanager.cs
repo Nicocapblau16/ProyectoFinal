@@ -7,7 +7,7 @@ public class UImanager : MonoBehaviour
 {
 
     public static UImanager sharedInstance;
-    public TMP_InputField inputField;
+    public TMP_InputField userNameTextBox;
 
 
 
@@ -31,17 +31,17 @@ public class UImanager : MonoBehaviour
         string existingUserName = PlayerPrefs.GetString("USER_NAME");
         if (existingUserName != "")
         {
-            inputField.placeholder.GetComponent<TextMeshProUGUI>().text = existingUserName;
+            userNameTextBox.placeholder.GetComponent<TextMeshProUGUI>().text = existingUserName;
         }
     }
 
     public void SaveUserName()
     {
-        string userName = inputField.text;
+        string userName = userNameTextBox.text;
 
         if(userName == "")
         {
-            dataPersistent.sharedInstance.userName = inputField.placeholder.GetComponent<TextMeshProUGUI>().text;
+            dataPersistent.sharedInstance.userName = userNameTextBox.placeholder.GetComponent<TextMeshProUGUI>().text;
         }
         else
         {
