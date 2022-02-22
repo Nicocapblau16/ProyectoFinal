@@ -8,31 +8,18 @@ public class UImanager : MonoBehaviour
 
     public static UImanager sharedInstance;
     public TMP_InputField userNameTextBox;
-
-
-
-    private void Awake()
-    {
-        if(sharedInstance == null)
-        {
-            sharedInstance = this;
-            DontDestroyOnLoad(this);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-  
+ 
 
 
     void Start()
     {
-        string existingUserName = PlayerPrefs.GetString("USER_NAME");
+        string existingUserName = PlayerPrefs.GetString("userName");
+        Debug.Log(existingUserName);
         if (existingUserName != "")
         {
             userNameTextBox.placeholder.GetComponent<TextMeshProUGUI>().text = existingUserName;
         }
+        
     }
 
     public void SaveUserName()
@@ -48,8 +35,8 @@ public class UImanager : MonoBehaviour
             dataPersistent.sharedInstance.userName = userName;
         }
 
-        PlayerPrefs.SetString("USER_NAME", dataPersistent.sharedInstance.userName);
+        PlayerPrefs.SetString("userName", dataPersistent.sharedInstance.userName);
     }
 
-
+    
 }

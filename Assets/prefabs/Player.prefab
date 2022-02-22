@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7038981246630119545}
   - component: {fileID: 7038981246630119544}
   - component: {fileID: 7038981246630119559}
-  - component: {fileID: 7038981246630119548}
   - component: {fileID: 7038981246630119547}
   - component: {fileID: 2890951019947178797}
+  - component: {fileID: 740393719458658746}
   m_Layer: 0
   m_Name: bola1
   m_TagString: player
@@ -98,20 +98,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7038981246630119548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7038981246630119558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21db6e87fae50c649b4e24f4136c5279, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotateSpeed: 100
-  target: {fileID: 7038981247177160927}
 --- !u!54 &7038981246630119547
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -140,6 +126,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a39de2dcaf84bb78cb6b973caab9fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &740393719458658746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7038981246630119558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21db6e87fae50c649b4e24f4136c5279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 200
+  target: {fileID: 7038981247177160927}
 --- !u!1 &7038981247177160927
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,9 +152,9 @@ GameObject:
   - component: {fileID: 7038981247177160914}
   - component: {fileID: 7038981247177160913}
   - component: {fileID: 7038981247177160912}
-  - component: {fileID: 7038981247177160917}
   - component: {fileID: 7038981247177160916}
   - component: {fileID: 1886469153054206974}
+  - component: {fileID: 35425804313733355}
   m_Layer: 0
   m_Name: bola2
   m_TagString: player
@@ -238,20 +238,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7038981247177160917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7038981247177160927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21db6e87fae50c649b4e24f4136c5279, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotateSpeed: 100
-  target: {fileID: 7038981246630119558}
 --- !u!54 &7038981247177160916
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -280,6 +266,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a39de2dcaf84bb78cb6b973caab9fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &35425804313733355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7038981247177160927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21db6e87fae50c649b4e24f4136c5279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 200
+  target: {fileID: 7038981246630119558}
 --- !u!1 &7038981247344094765
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,22 +15,30 @@ public class EnterStayExit : MonoBehaviour
 
     void Update()
     {
-        if (inCollider && Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
-            bola.transform.position = transform.position;
-            if (distanceToCenter < 2.5f)
+            if (inCollider)
             {
-                Debug.Log("Perf");
-            }
-            if (distanceToCenter < 5f)
-            {
-                Debug.Log("Nice");
+                bola.transform.position = transform.position;
+                if (distanceToCenter < 2.5f)
+                {
+                    Debug.Log("Perf");
+                }
+                if (distanceToCenter < 5f)
+                {
+                    Debug.Log("Nice");
+                }
+                else
+                {
+                    Debug.Log("Good");
+                }
             }
             else
             {
-                Debug.Log("Good");
+                GameOver = true;
             }
         }
+        
     }
 
     private void OnTriggerEnter(Collider other)

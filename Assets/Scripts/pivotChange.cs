@@ -7,6 +7,8 @@ public class pivotChange : MonoBehaviour
     public GameObject ball01;
     public GameObject ball02;
     public bool ballMoving = true;
+    public bool haspowerUp = false;
+    public float speed = 200f;
 
     private void ChangePivot(bool IsActive)
     {
