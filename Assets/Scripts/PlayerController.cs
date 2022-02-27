@@ -5,22 +5,35 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    
+    private pivotChange pivotChangeScript;
+
+    public GameObject target;
+
     void Start()
     {
-        Time.timeScale = 1;
+        
+        pivotChangeScript = FindObjectOfType<pivotChange>();
+        
+    }
+
+    void Update()
+    {
+        transform.RotateAround(target.transform.position, Vector3.right, pivotChangeScript.speed * Time.deltaTime);
     }
 
 
     private void OnTriggerEnter(Collider otherTrigger)
     {
-        if (otherTrigger.gameObject.CompareTag("powerup"))
+        if (otherTrigger.gameObject.CompareTag("powerup") && !pivotChangeScript.haspowerUp)
         {
-            Time.timeScale = 2f;
-            
+            pivotChangeScript.speed *= 2;
+            pivotChangeScript.haspowerUp = true;
         }
-        else if (otherTrigger.gameObject.CompareTag("powerdown"))
+        else if (otherTrigger.gameObject.CompareTag("powerdown") && pivotChangeScript.haspowerUp)
         {
-            Time.timeScale = 0.5f;
+            pivotChangeScript.speed /= 2;
+            pivotChangeScript.haspowerUp = false;
         }
     }
 }
