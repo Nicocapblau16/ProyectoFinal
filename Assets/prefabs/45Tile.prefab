@@ -140,17 +140,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5998467565954561094, guid: 76f5920306d485a45844400d3c22e67d, type: 3}
+      propertyPath: bola
+      value: 
+      objectReference: {fileID: 7038981247344094765, guid: 8c6ec39a386e1cd418f6cfdd88c491e6, type: 3}
     - target: {fileID: 6969931897961427870, guid: 76f5920306d485a45844400d3c22e67d, type: 3}
       propertyPath: m_Radius
-      value: 0.5986898
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969931897961427870, guid: 76f5920306d485a45844400d3c22e67d, type: 3}
+      propertyPath: m_Center.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6969931897961427870, guid: 76f5920306d485a45844400d3c22e67d, type: 3}
       propertyPath: m_Center.y
-      value: 0.011490441
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6969931897961427870, guid: 76f5920306d485a45844400d3c22e67d, type: 3}
       propertyPath: m_Center.z
-      value: 0.006392527
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6608387877781187840, guid: 76f5920306d485a45844400d3c22e67d, type: 3}

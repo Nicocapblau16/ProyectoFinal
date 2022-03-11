@@ -7,6 +7,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1973243776119511175, guid: b48889ec61a8bb345bca60440411d862, type: 3}
+      propertyPath: m_Radius
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1973243776119511175, guid: b48889ec61a8bb345bca60440411d862, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1973243776119511175, guid: b48889ec61a8bb345bca60440411d862, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1973243776119511175, guid: b48889ec61a8bb345bca60440411d862, type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2837051771119285570, guid: b48889ec61a8bb345bca60440411d862, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.4

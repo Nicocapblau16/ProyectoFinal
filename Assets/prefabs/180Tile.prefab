@@ -27,6 +27,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 2927605818622594809, guid: dc543e69bedaf8e46b8a751eb72496de, type: 3}
+      propertyPath: m_Radius
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2927605818622594809, guid: dc543e69bedaf8e46b8a751eb72496de, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2927605818622594809, guid: dc543e69bedaf8e46b8a751eb72496de, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2927605818622594809, guid: dc543e69bedaf8e46b8a751eb72496de, type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7675918943421699460, guid: dc543e69bedaf8e46b8a751eb72496de, type: 3}
       propertyPath: m_Name
       value: 180Tile

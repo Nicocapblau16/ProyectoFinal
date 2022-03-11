@@ -40,4 +40,11 @@ public class UIplayerName : MonoBehaviour
 
     }
 
+    public void Quit()
+    {
+        Debug.Log("Quit");
+        Application.Quit();
+    }
+
+
 }
